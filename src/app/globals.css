@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, 
+  dark --prefersdark;
+}
+
+@custom-variant dark (&:where(
+  [data-theme=dark], 
+  [data-theme=dark] 
+  *));
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+h2{
+  font-size: x-large;
+  font-weight: 600;
+}
+
+p{
+  font-size: medium;
+  font-weight: 400;
+  color: rgb(211, 211, 211);
+}
