@@ -14,10 +14,10 @@ const Newsletter = () => {
 
       {/* Overlay container for content */}
       <div className="relative z-10 flex flex-col items-center">
-        <h3 className="text-3xl text-primary font-semibold">
+        <h3 className="text-3xl text-primary dark:text-white font-semibold">
           Join the Clothique Community
         </h3>
-        <p className="mt-3 text-black">
+        <p className="mt-3 text-black dark:text-white">
           Get 10% off on your first order & stay updated.
         </p>
 
@@ -25,7 +25,7 @@ const Newsletter = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="input input-bordered w-full text-black"
+            className="input input-bordered w-full text-black dark:text-white"
           />
           <button className="btn btn-primary">Subscribe</button>
         </div>

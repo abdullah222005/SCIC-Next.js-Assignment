@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import catMen from "../../public/cat-men.jpg"
+import catWomen from "../../public/cat-women.jpg"
+import catAccss from "../../public/cat-accessories.jpg"
+import catNew from "../../public/new.jpg"
 
 const categories = [
-  { name: "Men", image: "/cat-men.jpg", link: "/men" },
-  { name: "Women", image: "/cat-women.jpg", link: "/women" },
-  { name: "Accessories", image: "/cat-accessories.jpg", link: "/accessories" },
-  { name: "New Arrivals", image: "/new.jpg", link: "/new" },
+  { name: "Men", image: catMen, link: "/men" },
+  { name: "Women", image: catWomen, link: "/women" },
+  { name: "Accessories", image: catAccss, link: "/accessories" },
+  { name: "New Arrivals", image: catNew, link: "/new" },
 ];
 
 const Categories = () => {
