@@ -52,7 +52,7 @@ const handleTheme = (checked:boolean) => {
 
             {/* Sun Icon - shown when toggle is OFF (light mode) */}
             <svg
-              className="swap-off w-5 h-5 absolute left-1 top-1.5"
+              className="w-5 h-5 absolute left-1.5 top-1"
               viewBox="0 0 28 28"
               fill="none"
             >
@@ -101,7 +101,7 @@ const handleTheme = (checked:boolean) => {
 
             {/* Moon Icon - shown when toggle is ON (dark mode) */}
             <svg
-              className="swap-on w-5 h-5 absolute right-1 top-1.5"
+              className="w-5 h-5 absolute right-1.25 top-1"
               viewBox="0 0 28 28"
               fill="none"
             >

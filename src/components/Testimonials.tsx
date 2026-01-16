@@ -15,8 +15,8 @@ const reviews = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 px-6 bg-base-200 text-center">
-      <h2>What Our Customers Say</h2>
+    <section className="py-16 px-6 bg-base-200 rounded-b-xl text-center">
+      <h1>What Our Customers Say</h1>
 
       <div className="grid md:grid-cols-3 gap-6 mt-8">
         {reviews.map((r) => (

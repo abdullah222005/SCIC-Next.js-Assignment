@@ -10,8 +10,8 @@ const features = [
 
 const WhyClothique = () => {
   return (
-    <section className="py-16 px-6 bg-base-200">
-      <h2>Why Choose Clothique?</h2>
+    <section className="py-16 px-6 bg-base-200 rounded-t-xl">
+      <h1 className="text-center">Why Choose Clothique?</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
         {features.map((f) => (
