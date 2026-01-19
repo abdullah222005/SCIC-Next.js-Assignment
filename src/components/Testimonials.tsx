@@ -15,7 +15,7 @@ const reviews = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 px-6 bg-base-200 rounded-b-xl text-center">
+    <section className="py-16 px-6 bg-base-200 rounded-b-xl text-center mb-16">
       <h1>What Our Customers Say</h1>
 
       <div className="grid md:grid-cols-3 gap-6 mt-8">

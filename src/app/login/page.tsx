@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { login } from "../../lib/auth";
+import toast from "react-hot-toast";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -15,11 +16,25 @@ export default function LoginPage() {
     const success = login(email, password);
 
     if (success) {
-      router.push("/"); // Redirect after login
+      toast.success('Login Successful..!!');
+      router.push("/"); 
     } else {
+      toast.error('Login Failed..!!')
       setError("Invalid email or password");
     }
   };
+
+  const handleMockLogin = () => {
+    const success = login("demo@clothique.com", "123456");
+
+    if (success) {
+      toast.success("Mock Login Successful!");
+      router.push("/");
+    } else {
+      toast.error("Mock Login Failed!");
+    }
+  };
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
@@ -46,6 +61,13 @@ export default function LoginPage() {
 
         <button onClick={handleLogin} className="btn btn-primary w-full mt-5">
           Login
+        </button>
+
+        <button
+          onClick={handleMockLogin}
+          className="btn btn-outline w-full mt-3"
+        >
+          Mock Login (Demo User)
         </button>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Categories = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
         {categories.map((cat) => (
-          <Link key={cat.name} href={cat.link}>
+          <Link key={cat.name} href={''}>
             <div className="relative h-60 rounded-lg overflow-hidden group">
               <Image
                 src={cat.image}

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { isAuthenticated, logout } from "../lib/auth";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 const AuthButton = () => {
   const router = useRouter();
@@ -16,6 +17,7 @@ const AuthButton = () => {
   const handleLogout = () => {
     logout();
     setLoggedIn(false);
+    toast.success("LogOut Successful..!!")
     router.push("/login");
   };
 

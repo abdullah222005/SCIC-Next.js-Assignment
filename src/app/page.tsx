@@ -16,8 +16,8 @@ export default function Home() {
         <BestSellers />
         <NewArrivals />
         <WhyClothique />
-        <Testimonials />
         <BrandStory />
+        <Testimonials />
         <Newsletter />
       </div>
     </>

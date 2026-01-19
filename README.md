@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clothique
 
-## Getting Started
+## Short Project Description
+Clothique is a modern, responsive clothing e-commerce web application built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **DaisyUI**. It offers a curated selection of men’s, women’s, and accessory fashion items, featuring dynamic product pages, search, filtering, and user authentication. Clothique is designed to provide a smooth shopping experience with an attractive UI, dark/light mode toggle, and interactive components.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+List of Implemented Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Responsive design for desktop and mobile
+Light/Dark mode toggle
+Mock authentication (email/password) with protected routes
+Dynamic product details page
+Search and and 
+Sort products by rating and price
+Product listing with sizes, colors, and stock info
+Newsletter subscription section
+About page with company story and image
+Contact page with contact form and company info
+Homepage with multiple sections:
+Hero carousel banner
+Featured products
+Popular categories
+Testimonials
+Newsletter signup
+Call-to-action sections
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Brief Explanation of Features
 
-## Learn More
+Responsive Design: Uses Tailwind CSS and DaisyUI for mobile-first design. Adjusts layout for tablets and desktops.
 
-To learn more about Next.js, take a look at the following resources:
+Theme Toggle: Switch between light and dark modes; state is persisted in localStorage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Authentication & Protected Routes: Mock login system with cookie storage; users must log in to access product details pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dynamic Product Pages: Each product has its own page generated using dynamic routing; displays detailed info, images, available sizes and colors, price, and reviews.
 
-## Deploy on Vercel
+Search & Filtering: Search bar to find products by name; filter by gender, category, and new arrivals; sort by rating or price.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Newsletter Subscription: Section for users to subscribe with their email for updates and discounts.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+About Page: Displays company story with image and description.
+
+Contact Page: Contact form for users to send messages and view company info.
+
+Homepage Sections: Multiple visually appealing sections like carousel banner, featured products, categories, and call-to-action blocks.
+
+
+Tech Stack
+
+Next.js 13 (App Router + Server Components)
+
+TypeScript
+
+Tailwind CSS + DaisyUI
+
+React
+
+Framer Motion (for animations)
+
+JSON (for mock product data)

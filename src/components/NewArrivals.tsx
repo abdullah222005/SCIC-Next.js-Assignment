@@ -3,12 +3,13 @@ import n1 from "../../public/n1.jpg"
 import n2 from "../../public/n2.jpg"
 import n3 from "../../public/n3.jpg"
 import n4 from "../../public/n4.jpg"
+import Link from "next/link";
 
 const arrivals = [
-  { id: 1, name: "Oversized Tee", price: "৳ 899", image: n1 },
-  { id: 2, name: "Summer Dress", price: "৳ 1399", image: n2 },
-  { id: 3, name: "Sneakers", price: "৳ 1099", image: n3 },
-  { id: 4, name: "Formal Shirt", price: "৳ 599", image: n4 },
+  { id: 111, name: "Oversized Tee", price: "৳ 899", image: n1 },
+  { id: 222, name: "Summer Dress", price: "৳ 1399", image: n2 },
+  { id: 333, name: "Sneakers", price: "৳ 1099", image: n3 },
+  { id: 444, name: "Formal Shirt", price: "৳ 599", image: n4 },
 ];
 
 const NewArrivals = () => {
@@ -25,7 +26,11 @@ const NewArrivals = () => {
             <div className="card-body">
               <h3 className="text-lg">{p.name}</h3>
               <p className="text-primary font-semibold">{p.price}</p>
-              <button className="btn btn-outline hover:btn-primary btn-sm mt-2">View</button>
+              <Link href={`/newArrival/${p.id}`}>
+                <button className="btn btn-outline w-full hover:btn-primary btn-sm mt-2">
+                  View
+                </button>
+              </Link>
             </div>
           </div>
         ))}

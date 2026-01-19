@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import AuthButton from "./AuthBtn";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
 
@@ -15,11 +16,12 @@ useEffect(() => {
 }, [theme]);
 
 const handleTheme = (checked:boolean) => {
+  toast.success('Theme changed..!!');
   setTheme(checked ? "dark" : "light");
 };
 
   return (
-    <nav className="bg-yellow-50 dark:bg-blue-950/30 border-b-2 border-gray-200">
+    <nav className="bg-yellow-50 dark:bg-blue-950/30 border-b-2 border-gray-200 dark:border-gray-600">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1>Clothique</h1>
 
@@ -31,13 +33,13 @@ const handleTheme = (checked:boolean) => {
             <Link href="/allClothes">All Clothes</Link>
           </li>
           <li>
-            <Link href="/upcomingClothes">Upcoming Clothes</Link>
-          </li>
-          <li>
             <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/addClothes">Add Clothes</Link>
           </li>
         </ul>
         <div className="flex gap-5 items-center">
